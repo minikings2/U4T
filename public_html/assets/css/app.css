@@ -1,0 +1,1197 @@
+:root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#718096;--line:#e7ebf2;--primary:#4f46e5;--primary2:#6366f1;--danger:#ef4444;--shadow:0 14px 45px rgba(24,32,56,.09);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text)}button,input,textarea,select{font:inherit}button{cursor:pointer;border:0}.app-shell{min-height:100vh}.topbar{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 34px;gap:30px;position:sticky;top:0;z-index:20}.brand{display:flex;align-items:center;gap:11px;min-width:230px}.brand-mark{width:39px;height:39px;border-radius:13px;background:linear-gradient(135deg,var(--primary),#8b5cf6);color:#fff;display:grid;place-items:center;font-weight:900}.brand b{font-size:20px;letter-spacing:-.5px}.brand b span{color:var(--primary)}.brand small{display:block;color:var(--muted);font-size:10px;margin-top:1px}.main-nav{display:flex;gap:5px;flex:1}.nav-btn{background:transparent;color:#657086;padding:10px 14px;border-radius:11px;font-weight:700}.nav-btn:hover,.nav-btn.active{background:#f0f1ff;color:var(--primary)}.top-actions{display:flex;gap:9px}.icon-btn,.profile-btn{background:#f5f6fa;border:1px solid var(--line);border-radius:12px;height:42px}.icon-btn{width:42px;font-size:21px}.profile-btn{padding:0 13px;font-weight:700}.chevron{margin-left:6px;color:var(--muted)}main{max-width:1440px;margin:auto;padding:30px 34px 60px}.tab-content{display:none}.tab-content.active{display:block}.hero{display:flex;justify-content:space-between;align-items:flex-end;margin:8px 0 24px;gap:20px}.eyebrow{color:var(--primary);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1.3px}.hero h1{font-size:42px;line-height:1.04;letter-spacing:-1.7px;margin:7px 0 10px}.hero p,.section-title p{color:var(--muted);margin:0;max-width:680px}.role-switch{background:#e9ecf5;border-radius:14px;padding:4px;display:flex;flex-shrink:0}.role-switch button{padding:11px 18px;background:transparent;border-radius:10px;color:#687286;font-weight:800}.role-switch button.active{background:#fff;color:var(--primary);box-shadow:0 4px 12px rgba(0,0,0,.07)}.map-layout{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:20px}.map-card,.side-panel,.card,.trip-card{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}.map-card{overflow:hidden}.map-toolbar{height:70px;padding:0 18px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.map-toolbar b{display:block}.map-toolbar span{display:block;color:var(--muted);font-size:12px;margin-top:3px}.toolbar-actions{display:flex;gap:8px}.map-frame{height:650px;background:#e9edf3}.side-panel{padding:20px;min-height:720px}.panel-head{display:flex;justify-content:space-between;align-items:flex-start}.panel-head h2{font-size:18px;margin:0}.panel-head p{color:var(--muted);font-size:12px;margin:5px 0 0}.status-dot{color:#22c55e;font-size:18px}.status-dot.offline{color:#ef4444}.request-box{background:#f8f9fd;border:1px solid var(--line);padding:13px;border-radius:16px;margin:17px 0}.request-box textarea{width:100%;height:78px;resize:none;border:1px solid var(--line);border-radius:11px;padding:10px;background:#fff;outline:none}.request-box small{display:block;color:var(--muted);font-size:11px;margin-top:8px}.btn{border-radius:11px;padding:11px 15px;font-weight:800;transition:.15s}.btn:disabled{opacity:.45;cursor:not-allowed}.btn-primary{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;box-shadow:0 7px 18px rgba(79,70,229,.2)}.btn-primary:hover:not(:disabled){transform:translateY(-1px)}.btn-light{background:#f4f5f9;color:#39445a}.btn-danger{background:#fee2e2;color:#b91c1c}.btn-sm{padding:8px 11px;font-size:12px}.full-width{width:100%;margin-top:9px}.feed-list{display:flex;flex-direction:column;gap:9px}.ride-item{border:1px solid var(--line);border-radius:15px;padding:13px}.ride-top{display:flex;align-items:center;justify-content:space-between;gap:8px}.ride-item p{font-size:13px;margin:8px 0;color:#475166}.ride-item small{color:var(--muted)}.pill{display:inline-flex;padding:4px 8px;border-radius:99px;font-size:10px;font-weight:900;background:#f3f4f6;color:#64748b}.pill.pending{background:#fff7ed;color:#c2410c}.pill.accepted{background:#fee2e2;color:#b91c1c}.pill.on_the_way{background:#dbeafe;color:#1d4ed8}.pill.driver{background:#ede9fe;color:#6d28d9}.pill.full{background:#f1f5f9}.driver-alert{margin-top:10px;padding:9px;border-radius:10px;background:#eff6ff;color:#1d4ed8;font-size:12px;font-weight:800}.section-title{display:flex;justify-content:space-between;align-items:flex-end;margin:10px 0 25px}.section-title h2{font-size:34px;letter-spacing:-1px;margin:5px 0}.trip-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:15px}.trip-card{padding:20px}.trip-date{color:var(--primary);font-size:13px;font-weight:900;margin-bottom:13px}.route{display:flex;align-items:center;gap:10px;font-size:17px}.route span{color:#a0a8b7}.trip-meta{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin:16px 0}.trip-action{border-top:1px solid var(--line);padding-top:13px}.tables-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{padding:22px}.card h3{margin-top:0}.data-table{width:100%;border-collapse:collapse}.data-table th,.data-table td{text-align:left;padding:12px 8px;border-bottom:1px solid var(--line);font-size:13px}.data-table th{color:var(--muted);font-size:11px;text-transform:uppercase}.modal{position:fixed;inset:0;background:rgba(16,24,40,.48);backdrop-filter:blur(8px);display:grid;place-items:center;z-index:100;padding:20px}.hidden{display:none!important}.modal-content{width:min(520px,100%);background:#fff;border-radius:24px;padding:28px;position:relative;box-shadow:0 30px 90px rgba(0,0,0,.2)}.auth-modal{width:min(430px,100%)}.modal-close{position:absolute;right:15px;top:12px;background:#f3f4f7;border-radius:50%;width:32px;height:32px;font-size:20px;color:#667085}.modal-icon{width:48px;height:48px;border-radius:15px;background:#ede9fe;color:var(--primary);display:grid;place-items:center;font-size:23px;font-weight:900;margin-bottom:15px}.modal-content h2{margin:0 0 5px;font-size:27px}.modal-sub{color:var(--muted);font-size:13px;margin:0 0 20px;line-height:1.5}.modal-content label{display:block;font-size:12px;font-weight:800;margin:12px 0}.modal-content input,.modal-content select{display:block;width:100%;border:1px solid var(--line);border-radius:11px;padding:12px;margin-top:6px;outline:none;background:#fff}.modal-content input:focus{border-color:#a5b4fc;box-shadow:0 0 0 4px #eef2ff}.auth-switch{text-align:center;color:var(--muted);font-size:12px}.link-btn{background:none;color:var(--primary);font-weight:800}.error{background:#fef2f2;color:#b91c1c;border-radius:10px;padding:9px;font-size:12px;margin-top:10px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.account-head{display:flex;gap:14px;align-items:center;margin-bottom:20px}.avatar{width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,var(--primary),#8b5cf6);color:#fff;display:grid;place-items:center;font-size:22px;font-weight:900}.account-head h2{font-size:21px}.account-head p{color:var(--muted);font-size:12px;margin:3px 0}.role-card{background:#f8f8ff;border:1px solid #e8e7ff;border-radius:16px;padding:15px}.role-card small,.role-card strong{display:block}.role-card small{color:var(--muted);font-size:11px}.role-card strong{font-size:20px;margin:3px 0 8px}.chat-modal{width:min(620px,100%)}.global-chat-body{height:390px;overflow:auto;background:#f7f8fb;border:1px solid var(--line);border-radius:15px;padding:12px}.gmsg{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:9px;margin-bottom:7px;font-size:12px}.gmsg b{color:var(--primary)}.gmsg time{color:#a0a8b7;font-size:10px}.chat-compose{display:flex;gap:8px;margin-top:10px}.chat-compose input{flex:1}.footer{text-align:center;color:#9aa3b4;padding:30px;font-size:11px}.footer a{color:inherit}.cookie-banner{position:fixed;bottom:15px;left:15px;background:#182033;color:#fff;padding:10px 13px;border-radius:12px;font-size:11px;z-index:120}.cookie-banner .btn{margin-left:8px;background:#fff;color:#182033;padding:6px 9px}.toast{position:fixed;right:22px;bottom:22px;z-index:200;background:#182033;color:#fff;padding:13px 16px;border-radius:13px;box-shadow:var(--shadow);font-size:12px;max-width:360px}@media(max-width:1000px){.topbar{padding:0 15px;gap:10px}.brand{min-width:auto}.main-nav{overflow:auto}.map-layout{grid-template-columns:1fr}.side-panel{min-height:auto}.map-frame{height:520px}.hero h1{font-size:34px}}@media(max-width:700px){main{padding:20px 12px}.topbar{height:auto;min-height:68px;flex-wrap:wrap;padding:10px}.main-nav{order:3;width:100%}.hero,.section-title{display:block}.role-switch{margin-top:16px;width:max-content}.tables-grid{grid-template-columns:1fr}.map-toolbar{height:auto;padding:13px;gap:10px;align-items:flex-start;flex-direction:column}.toolbar-actions{flex-wrap:wrap}.map-frame{height:450px}.form-row{grid-template-columns:1fr}}
+/* v7 live location */
+.live-location{display:block;margin-top:7px;color:#16a34a;font-weight:600}
+.driver-alert{margin-top:10px;padding:10px 12px;border-radius:12px;background:#ecfdf5;color:#166534;font-weight:600}
+#geo-status{display:inline-flex;align-items:center;gap:6px;margin-left:10px;font-size:12px;color:#64748b}
+#geo-status::before{content:'●';font-size:9px}
+/* v9 profiles / private chats / participant map */
+.hidden{display:none!important}.map-legend{display:flex;gap:10px;flex-wrap:wrap;padding:9px 0 0;font-size:10px;color:#718096}.legend-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}.legend-dot.free{background:#16a34a}.legend-dot.busy{background:#dc2626}.legend-dot.way{background:#2563eb}.user-inline,.user-card-main{border:0;background:transparent;padding:0;display:inline-flex;align-items:center;gap:7px;color:inherit;text-align:left}.user-inline:hover b,.user-card-main:hover h3{color:var(--primary)}.mini-avatar{width:26px;height:26px;border-radius:50%;object-fit:cover;display:inline-grid;place-items:center;flex:none}.avatar-fallback{background:#eef0ff;color:var(--primary);font-weight:900}.ride-actions,.trip-action,.user-card-actions,.profile-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.ride-free{border-left:4px solid #16a34a}.ride-busy{border-left:4px solid #dc2626}.booking-active{border-left:4px solid #16a34a}.booking-cancelled{border-left:4px solid #94a3b8;opacity:.8}.users-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:15px}.user-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:17px;box-shadow:var(--shadow)}.user-card-main{width:100%;gap:13px}.user-card-main h3{margin:0 0 4px;font-size:16px}.user-card-main p{margin:0 0 6px;color:var(--muted);font-size:11px}.user-card-main span{font-size:12px;font-weight:800}.user-card-avatar{width:54px;height:54px;border-radius:50%;object-fit:cover;display:grid;place-items:center;flex:none}.profile-modal{width:min(720px,100%)}.profile-hero{display:flex;align-items:center;gap:15px;padding:3px 0 16px;border-bottom:1px solid var(--line)}.profile-avatar{width:78px;height:78px;border-radius:50%;object-fit:cover;display:grid;place-items:center;flex:none}.profile-hero h2{margin:0 0 5px}.profile-hero p{margin:0 0 7px;color:var(--muted);font-size:12px}.profile-block,.contacts{margin-top:16px;background:#f8f9fd;border:1px solid var(--line);border-radius:15px;padding:13px}.profile-block h4,.contacts h4{margin:0 0 9px}.profile-block p{font-size:13px;color:#475166}.profile-trip{display:grid;grid-template-columns:1fr auto;gap:4px 10px;padding:9px 0;border-top:1px solid var(--line);font-size:12px}.profile-trip:first-of-type{border-top:0}.profile-trip span{color:var(--muted)}.profile-trip small{grid-column:1/-1;color:var(--muted)}.contact-row{display:flex;justify-content:space-between;gap:15px;padding:8px 0;border-top:1px solid var(--line);font-size:12px}.contact-row:first-of-type{border-top:0}.contact-row span{color:var(--muted)}.contact-row a{color:var(--primary);font-weight:700;text-decoration:none;overflow-wrap:anywhere}.profile-form{margin-top:16px}.profile-form h3{font-size:14px;margin:16px 0 8px}.profile-form label{display:block;margin-top:9px;font-size:11px;font-weight:800}.profile-form input,.profile-form textarea{width:100%;margin-top:5px;border:1px solid var(--line);border-radius:11px;padding:10px;background:#fff;outline:none}.profile-form textarea{height:90px;resize:vertical}.account-avatar{width:52px;height:52px;border-radius:50%;object-fit:cover;display:grid;place-items:center;flex:none}.chat-person-head{display:flex;align-items:center;gap:12px;margin-bottom:13px}.chat-person-head h2{margin:0}.chat-person-head p{margin:4px 0 0;color:var(--muted);font-size:12px}.gmsg.mine{background:#eef2ff}.gmsg .user-inline{font-size:11px}.map-avatar-marker{width:52px;height:52px;display:grid;place-items:center}.map-avatar-image{width:44px;height:44px;border-radius:50%;object-fit:cover;display:grid;place-items:center;background:#fff;border:3px solid #16a34a;box-shadow:0 4px 14px rgba(0,0,0,.2);font-size:16px;font-weight:900;color:var(--primary)}.map-profile-btn{margin-top:8px;border:0;border-radius:8px;padding:6px 9px;background:#eef0ff;color:#4f46e5;font-weight:800;cursor:pointer}.request-label{font-size:11px;font-weight:900;color:#687286;margin-bottom:7px}.destination-label{margin-top:12px}.request-input{width:100%;border:1px solid var(--line);border-radius:11px;padding:10px;background:#fff;outline:none}.muted{color:var(--muted)!important}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:700px){.form-row{grid-template-columns:1fr}.users-grid{grid-template-columns:1fr}.profile-hero{align-items:flex-start}}
+.map-avatar-image img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}.map-avatar-image{overflow:hidden}
+
+/* v10 responsive + avatar editor + chat list */
+.driver-view-controls{margin:10px 0 12px;padding:10px 12px;background:#f8f9fd;border:1px solid var(--line);border-radius:13px}.driver-view-controls label{font-size:11px;font-weight:800;color:#687286;display:block}.driver-view-controls select{display:block;width:100%;margin-top:6px;padding:9px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--text)}.chat-list-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}.chat-list-item{width:100%;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:11px;align-items:center;text-align:left;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:var(--shadow)}.chat-list-item:hover{border-color:#cfd3ff;transform:translateY(-1px)}.chat-list-item span{min-width:0}.chat-list-item b,.chat-list-item small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.chat-list-item small{margin-top:4px;color:var(--muted);font-size:11px}.chat-list-item time{color:var(--muted);font-size:10px}.avatar-edit-row{display:flex;align-items:center;gap:12px;margin-top:5px}.avatar-edit-row input{margin-top:0!important;flex:1}.crop-modal{width:min(520px,100%)}.crop-stage{width:min(320px,82vw);height:min(320px,82vw);margin:16px auto;background:#111;border-radius:18px;overflow:hidden;touch-action:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}#avatar-crop-canvas{width:100%;height:100%;display:block;touch-action:none}.crop-zoom{display:block;margin-top:15px;font-size:12px;font-weight:800}.crop-zoom input{display:block;width:100%;margin-top:8px}.social-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.social-link{display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border-radius:10px;background:#fff;border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:12px;font-weight:800}.social-link svg{width:17px;height:17px;display:block}.map-avatar-image{width:44px!important;height:44px!important}.map-avatar-marker{pointer-events:auto}
+@media(max-width:1100px){.topbar{padding:0 20px;gap:14px}.brand{min-width:190px}.main-nav{overflow-x:auto;scrollbar-width:none}.main-nav::-webkit-scrollbar{display:none}.nav-btn{white-space:nowrap}.map-layout{grid-template-columns:minmax(0,1fr) 330px}main{padding:24px 20px 50px}.map-frame{height:580px}.hero h1{font-size:36px}}
+@media(max-width:820px){.topbar{height:auto;min-height:68px;flex-wrap:wrap;padding:12px 14px}.brand{min-width:0;flex:1}.brand small{display:none}.main-nav{order:3;flex-basis:100%;width:100%;padding-bottom:2px}.top-actions{margin-left:auto}.map-layout{grid-template-columns:1fr}.side-panel{min-height:0}.map-frame{height:58vh;min-height:420px;max-height:620px}.hero{align-items:flex-start;flex-direction:column}.role-switch{align-self:stretch}.role-switch button{flex:1}.hero h1{font-size:32px}.section-title{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){main{padding:16px 10px 40px}.topbar{padding:10px}.brand b{font-size:17px}.profile-btn{max-width:145px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.map-toolbar{height:auto;min-height:62px;padding:10px 12px;gap:8px;align-items:flex-start}.toolbar-actions{display:none}.map-frame{height:52vh;min-height:360px}.side-panel{padding:14px;border-radius:18px}.map-card{border-radius:18px}.map-card,.side-panel,.card,.trip-card{border-radius:17px}.hero h1{font-size:28px}.hero p{font-size:13px}.chat-list-grid{grid-template-columns:1fr}.chat-modal{width:100%;height:min(90vh,760px)}.modal-content{padding:18px}.form-row{grid-template-columns:1fr}.profile-hero{gap:11px}.profile-avatar{width:62px;height:62px}.profile-trip{grid-template-columns:1fr}.users-grid{grid-template-columns:1fr}.data-table{font-size:11px}}
+/* v11 polish: stable layout, trip map, ratings/reviews, legal pages */
+html{overflow-x:hidden}body{overflow-x:hidden}.modal{overflow:auto;align-items:center}.modal-content{max-height:calc(100vh - 40px);overflow:auto}.account-guest{padding:2px 0}.account-guest h2{font-size:30px;margin-bottom:12px}.account-guest p{color:var(--muted);margin:0 0 18px}.trip-map-picker{margin-top:15px;padding:12px;background:#f8f9fd;border:1px solid var(--line);border-radius:15px}.trip-map-picker-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:9px;font-size:12px}.trip-map-picker-head span{color:var(--muted);font-size:10px}.trip-map{width:100%;height:260px;border-radius:12px;overflow:hidden;background:#e9edf3}.trip-map-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}.trip-map-actions .btn{flex:1;min-width:150px}.rating-editor textarea{width:100%;min-height:86px;margin-top:9px;border:1px solid var(--line);border-radius:11px;padding:10px;resize:vertical;outline:none}.profile-block-group{display:flex;flex-direction:column;gap:10px}.rating-editor-highlight{outline:2px solid #f59e0b;outline-offset:2px;transition:outline-color .3s}.rating-stars{display:flex;gap:3px;margin:4px 0}.star-btn{background:transparent;color:#cbd5e1;font-size:28px;line-height:1;padding:2px;cursor:pointer}.star-btn.selected,.star-btn:hover{color:#f59e0b}.review-item{padding:10px 0;border-top:1px solid var(--line)}.review-item:first-of-type{border-top:0}.review-head{display:flex;align-items:center;gap:8px;font-size:12px}.review-head span{margin-left:auto;font-weight:900}.review-item p{margin:7px 0 0;font-size:12px;color:#475166;line-height:1.45}.policy-modal{width:min(760px,100%)}.policy-body{color:#3f4a5f;font-size:13px;line-height:1.65}.policy-body h3{font-size:14px;color:var(--text);margin:18px 0 6px}.policy-body p{margin:0 0 8px}.map-pickup-btn{background:#ecfdf5;color:#166534}.map-profile-btn+.map-pickup-btn{display:block}.ride-actions .btn{min-width:0}.map-card{min-width:0}.side-panel{min-width:0}.map-frame,.trip-map{position:relative}.ymaps-2-1-79-map,.ymaps-2-1-80-map,.ymaps-2-1-81-map{width:100%!important;height:100%!important}
+@media(max-width:700px){.modal{padding:10px}.modal-content{max-height:calc(100vh - 20px);border-radius:20px;padding:20px}.account-guest h2{font-size:26px}.trip-map{height:230px}.trip-map-actions .btn{flex-basis:100%}.policy-modal{width:100%}.star-btn{font-size:25px}}
+
+.terms-check{display:flex!important;align-items:flex-start;gap:7px;font-weight:600!important;line-height:1.45}.terms-check input{width:auto!important;margin:2px 0 0!important;display:block}.inline-policy{background:none;color:var(--primary);font-weight:800;padding:0;text-decoration:underline}.inline-policy:hover{color:var(--primary2)}
+
+/* v12 */
+.modal-icon{display:none!important}.field-help{display:block!important;color:var(--muted);font-size:10px!important;font-weight:600!important;margin-top:5px!important}.unread-badge{display:inline-grid;place-items:center;min-width:18px;height:18px;padding:0 5px;border-radius:99px;background:#ef4444;color:#fff;font-size:10px;font-weight:900;margin-left:4px}.seats-left{padding:5px 8px;border-radius:9px;background:#eef2ff;color:#4f46e5}.seats-one{background:#fff7ed;color:#c2410c}.seats-none{background:#fee2e2;color:#b91c1c}.chat-list-item{position:relative}.chat-list-item .unread-mini{margin-left:6px;background:#ef4444;color:#fff;border-radius:99px;padding:2px 6px;font-size:9px;font-weight:900}.field-help+input{margin-top:5px}.map-avatar-marker{cursor:pointer}.map-profile-btn{display:block;width:100%}.map-pickup-btn{display:block;width:100%}.booking-chat-modal .global-chat-body{min-height:360px}
+
+/* v14 polish: account dashboard, ratings, passengers, address states */
+.hidden{display:none!important}
+.account-dashboard{padding:2px 0 0}
+.account-head{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:13px;padding:4px 0 16px}
+.account-head h2{margin:0 0 4px}.account-head p{margin:0;color:var(--muted);font-size:12px}
+.account-rating{display:grid;text-align:right;gap:3px}.account-rating strong,.big-rating{font-size:21px;font-weight:950}.account-rating small{color:var(--muted);font-size:10px}
+.account-actions{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}.account-actions .btn{flex:1;min-width:180px}
+.account-card{margin-top:12px;padding:15px;background:linear-gradient(180deg,#fff 0%,#f8f9fd 100%);border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow)}
+.account-card h3{margin:0;font-size:14px}.account-card>p{margin:6px 0 0;color:#475166;font-size:12px;line-height:1.5}
+.account-card-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.account-card-head p{margin:5px 0 0;color:var(--muted);font-size:11px;line-height:1.45}
+.big-rating{white-space:nowrap}.account-review-summary{margin-top:12px}.account-review-summary>div:first-child{display:flex;align-items:baseline;gap:9px;padding-bottom:9px}.account-review-summary>div:first-child strong{font-size:24px}.account-review-summary>div:first-child small{color:var(--muted);font-size:10px}
+.account-review{padding:10px 0;border-top:1px solid var(--line)}.account-review p{margin:7px 0 0;color:#475166;font-size:12px;line-height:1.45}.account-reviews-empty{display:flex;align-items:flex-start;gap:12px;margin-top:12px}.account-reviews-empty>b{font-size:20px;white-space:nowrap}.account-reviews-empty>span{color:var(--muted);font-size:11px;line-height:1.45}
+.profile-form{padding-top:2px}.profile-form-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.profile-form-head h3{margin:0}.profile-form-head p{margin:4px 0 0;color:var(--muted);font-size:11px}
+.profile-block-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.profile-block-head b{white-space:nowrap}
+.passengers-summary{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 14px}.passengers-summary span{padding:8px 10px;border:1px solid var(--line);border-radius:11px;background:#f8f9fd;color:var(--muted);font-size:10px;font-weight:700}.passengers-summary b{color:var(--text);font-size:13px}
+.passengers-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px}.passenger-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:13px;box-shadow:var(--shadow)}
+.passenger-card-head{display:flex;align-items:center;gap:10px}.passenger-card-head h3{margin:0 0 4px;font-size:14px}.passenger-card-head p{margin:0;color:var(--muted);font-size:11px}.passenger-route{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:12px;font-size:12px}.passenger-route span{color:var(--muted)}.passenger-card>small{display:block;margin-top:8px;color:var(--muted);font-size:10px}.passenger-actions{display:flex;gap:7px;margin-top:12px}.passenger-actions .btn{flex:1}
+.map-toolbar #geo-status{max-width:min(48vw,420px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ride-actions{display:flex;gap:7px;flex-wrap:wrap}.ride-actions .btn{flex:0 1 auto}.profile-actions{display:flex;gap:8px;flex-wrap:wrap}.profile-actions .btn{flex:1;min-width:170px}
+@media(max-width:700px){.account-head{grid-template-columns:auto minmax(0,1fr)}.account-rating{grid-column:2;text-align:left;margin-top:-7px}.account-actions .btn{min-width:0;flex-basis:100%}.account-card-head{align-items:flex-start}.passengers-grid{grid-template-columns:1fr}.map-toolbar #geo-status{max-width:60vw}}
+
+/* v15 location, online and passenger map polish */
+.passenger-map-btn{font-size:13px;font-weight:900;min-height:44px;box-shadow:0 8px 18px rgba(79,70,229,.16)}.count-badge{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 7px;margin-left:6px;border-radius:99px;background:rgba(255,255,255,.22);font-size:11px}.online-state{font-weight:800;white-space:nowrap}.online-state.is-online{color:#16a34a}.online-state.is-offline{color:#94a3b8}.star-static{font-size:24px;color:#d7dde8}.star-static.selected{color:#f59e0b}.review-done{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.review-done .rating-stars{margin:0}.map-avatar-marker{filter:drop-shadow(0 3px 7px rgba(15,23,42,.18))}.map-toolbar .toolbar-actions{flex-wrap:wrap}.request-box .mini-actions .btn{flex:1;min-width:130px}.request-box .mini-actions{display:flex;gap:7px;flex-wrap:wrap}.request-box .mini-actions .hidden{display:none!important}
+
+/* =========================================================
+   urfu4tour — visual redesign v16
+   Design only: no JS/API/DB behavior changes.
+   Direction: student-friendly, mobile-first, map-centric,
+   less "AI-generated", more editorial / urban.
+   ========================================================= */
+:root{
+  --bg:#f6f4ef;
+  --card:#ffffff;
+  --text:#17191c;
+  --muted:#70757d;
+  --line:#e5e1d8;
+  --primary:#ff5a36;
+  --primary2:#ff6f4d;
+  --accent:#ffd84d;
+  --green:#159a62;
+  --shadow:0 8px 28px rgba(26,25,22,.08);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+body{background:var(--bg);color:var(--text)}
+button,input,textarea,select{font-family:inherit}
+button{transition:background-color .16s ease,border-color .16s ease,transform .16s ease,box-shadow .16s ease}
+.topbar{
+  height:68px;padding:0 24px;gap:22px;background:rgba(255,255,255,.96);
+  border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(20,20,20,.02)
+}
+.brand{gap:10px;min-width:205px}
+.brand-mark{
+  width:36px;height:36px;border-radius:10px;background:var(--text);
+  color:#fff;font-size:15px;letter-spacing:-.5px
+}
+.brand b{font-size:18px;letter-spacing:-.7px}
+.brand b span{color:var(--primary)}
+.brand small{font-size:9px;color:#8a8e94;letter-spacing:.15px}
+.main-nav{gap:2px}
+.nav-btn{
+  padding:9px 12px;border-radius:9px;color:#62676e;font-size:13px;font-weight:750
+}
+.nav-btn:hover{background:#f3f1ec;color:var(--text)}
+.nav-btn.active{background:var(--text);color:#fff}
+.top-actions{gap:7px}
+.icon-btn,.profile-btn{height:40px;background:#f5f3ee;border:1px solid var(--line);border-radius:10px}
+.icon-btn{width:40px}
+.profile-btn{padding:0 11px}
+main{max-width:1480px;padding:24px 24px 54px}
+.hero{margin:4px 0 18px;align-items:center}
+.eyebrow{color:var(--primary);font-size:10px;letter-spacing:1.5px}
+.hero h1{
+  font-size:38px;letter-spacing:-1.8px;line-height:1.04;margin:5px 0 8px;
+  max-width:760px
+}
+.hero p{font-size:13px;line-height:1.55}
+.role-switch{background:#e9e6df;border-radius:10px;padding:3px}
+.role-switch button{padding:9px 15px;border-radius:8px}
+.role-switch button.active{color:var(--text);box-shadow:0 2px 8px rgba(20,20,20,.09)}
+.map-layout{grid-template-columns:minmax(0,1fr) 360px;gap:14px}
+.map-card,.side-panel,.card,.trip-card{
+  border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow)
+}
+.map-card{background:#fff}
+.map-toolbar{height:60px;padding:0 14px}
+.map-toolbar b{font-size:13px}
+.map-toolbar span{font-size:11px}
+.map-frame{height:calc(100vh - 210px);min-height:560px;background:#e7e8e5}
+.side-panel{padding:16px;min-height:0}
+.panel-head h2{font-size:16px;letter-spacing:-.3px}
+.panel-head p{font-size:11px}
+.status-dot{font-size:15px}
+.map-legend{padding:8px 0 0}
+.request-box,.driver-view-controls{
+  background:#faf9f6;border-color:var(--line);border-radius:12px
+}
+.request-box{padding:12px;margin:13px 0}
+.request-box textarea,.request-input,.modal-content input,.modal-content select{
+  border-color:#dcd8cf;border-radius:9px
+}
+.request-box textarea:focus,.request-input:focus,
+.modal-content input:focus{border-color:#ff9a82;box-shadow:0 0 0 3px #fff0ec}
+.request-label{color:#565b62}
+.btn{border-radius:9px;padding:10px 13px;font-size:12px}
+.btn-primary{
+  background:var(--primary);box-shadow:0 5px 14px rgba(255,90,54,.18)
+}
+.btn-primary:hover:not(:disabled){background:#ef4d2b;transform:translateY(-1px)}
+.btn-light{background:#f1efea;color:#292c31}
+.btn-light:hover{background:#e8e5de}
+.full-width{margin-top:8px}
+.feed-list{gap:7px}
+.ride-item,.trip-card,.user-card,.chat-list-item{
+  border-color:var(--line);box-shadow:none
+}
+.ride-item{border-radius:11px;padding:11px}
+.ride-free{border-left:3px solid var(--green)}
+.ride-busy{border-left:3px solid #d34b45}
+.section-title{margin:7px 0 22px}
+.section-title h2{font-size:32px;letter-spacing:-1.2px}
+.trip-grid{gap:12px}
+.trip-card{padding:17px;border-radius:13px}
+.trip-date{color:var(--primary)}
+.card{padding:19px}
+.user-card{border-radius:13px;padding:14px}
+.modal{background:rgba(18,19,20,.54);backdrop-filter:blur(4px)}
+.modal-content{
+  border-radius:17px;padding:24px;box-shadow:0 24px 70px rgba(0,0,0,.22)
+}
+.modal-close{background:#f1efea;color:#555}
+.avatar{
+  background:var(--text);border-radius:50%
+}
+.avatar-fallback{background:#eeebe4;color:var(--text)}
+.toast{background:var(--text);border-radius:10px}
+.footer{padding:26px}
+.cookie-banner{border-radius:10px}
+
+/* Make the mobile information architecture feel like a transport app:
+   compact header -> quick role switch -> action card -> map. */
+@media(max-width:820px){
+  .topbar{
+    height:auto;min-height:60px;padding:8px 10px;gap:8px;
+    position:sticky;top:0
+  }
+  .brand{min-width:0;flex:1}
+  .brand b{font-size:17px}
+  .top-actions{margin-left:auto}
+  .icon-btn{display:none}
+  .profile-btn{height:38px}
+  .main-nav{
+    order:3;flex-basis:100%;width:100%;
+    display:flex;overflow-x:auto;gap:4px;padding:2px 0 1px;
+    scrollbar-width:none
+  }
+  .main-nav::-webkit-scrollbar{display:none}
+  .nav-btn{
+    flex:0 0 auto;white-space:nowrap;padding:8px 10px;
+    font-size:12px;border-radius:8px
+  }
+  main{padding:12px 10px 32px}
+  .hero{gap:10px;margin:2px 0 12px}
+  .hero h1{font-size:27px;letter-spacing:-1.15px;margin:3px 0 6px}
+  .hero p{font-size:12px;line-height:1.45;max-width:560px}
+  .role-switch{width:100%;margin-top:8px;align-self:stretch}
+  .role-switch button{flex:1;padding:10px 8px;font-size:12px}
+  .map-layout{display:flex;flex-direction:column;gap:10px}
+  .side-panel{order:1;padding:12px;border-radius:14px}
+  .map-card{order:2;border-radius:14px}
+  .map-toolbar{min-height:48px;padding:9px 11px;flex-direction:row;align-items:center}
+  .map-toolbar .toolbar-actions{display:none}
+  .map-toolbar b{font-size:12px}
+  .map-toolbar span{font-size:10px;margin-top:1px}
+  .map-frame{height:50vh;min-height:330px;max-height:560px}
+  .panel-head h2{font-size:15px}
+  .panel-head p{font-size:10px}
+  .map-legend{display:none}
+  .request-box{margin:9px 0 0;padding:10px}
+  .request-box .mini-actions{gap:5px}
+  .request-box .mini-actions .btn{min-width:0;padding:9px 7px;font-size:11px}
+  .request-box textarea{height:58px}
+  .request-label{margin-bottom:5px}
+  .destination-label{margin-top:9px}
+  .full-width{min-height:42px}
+  #add-marker-btn{font-size:13px}
+  .driver-view-controls{margin:8px 0 0}
+}
+
+/* Very small screens: reduce visual chrome, keep thumb-sized controls. */
+@media(max-width:560px){
+  .brand small{display:none}
+  .brand-mark{width:34px;height:34px;border-radius:9px}
+  .brand b{font-size:16px}
+  .nav-btn{font-size:11px;padding:8px 9px}
+  .hero h1{font-size:25px}
+  .section-title h2{font-size:27px}
+  .map-frame{height:48vh;min-height:310px}
+  .side-panel{border-radius:13px}
+  .account-card,.passenger-card{border-radius:13px}
+}
+
+/* Desktop refinement: less "card wall", more breathing room. */
+@media(min-width:1100px){
+  .side-panel{position:sticky;top:82px;align-self:start;max-height:calc(100vh - 100px);overflow:auto}
+  .map-card{min-height:calc(100vh - 170px)}
+}
+
+/* Accessibility / tactile affordances */
+.btn,.nav-btn,.icon-btn,.profile-btn,.role-switch button{min-height:40px}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{
+  outline:3px solid rgba(255,90,54,.25);outline-offset:1px
+}
+
+/* v17 URFU visual pass: logo gradient + map-first mobile UX */
+:root{
+  --urfu-pink:#df0870;
+  --urfu-red:#ef1748;
+  --urfu-orange:#f45b16;
+  --urfu-yellow:#ffc400;
+  --urfu-gradient:linear-gradient(135deg,var(--urfu-pink) 0%,var(--urfu-red) 42%,var(--urfu-orange) 72%,var(--urfu-yellow) 100%);
+  --bg:#f7f6f3;
+  --card:#ffffff;
+  --text:#171719;
+  --muted:#73737a;
+  --line:#e7e5e1;
+  --primary:#e51b52;
+  --primary2:#f36a13;
+}
+
+body{background:var(--bg);color:var(--text)}
+.topbar{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.brand-mark{background:var(--urfu-gradient);border-radius:12px;box-shadow:0 7px 18px rgba(229,27,82,.16)}
+.brand b span{color:var(--urfu-red)}
+.nav-btn:hover,.nav-btn.active{background:#fff0f4;color:#c70f46}
+.role-switch{background:#eceae6}
+.role-switch button.active{color:#c70f46}
+.map-layout{grid-template-columns:minmax(0,1fr) 360px}
+.map-card,.side-panel,.card,.trip-card{border-radius:18px;box-shadow:0 8px 28px rgba(24,24,27,.06)}
+.map-toolbar{background:#fff}
+.map-frame{background:#e9e9e9}
+.btn-primary{background:var(--urfu-gradient);box-shadow:0 7px 18px rgba(229,27,82,.18)}
+.btn-primary:hover:not(:disabled){background:linear-gradient(135deg,#c90061,#e91842,#f45b16,#ffbf00)}
+.eyebrow,.trip-date{color:#d5144c}
+.modal-icon{background:linear-gradient(135deg,#fff0f5,#fff2df);color:#d5144c}
+.avatar{background:var(--urfu-gradient)}
+.role-card{background:linear-gradient(135deg,#fff5f7,#fffaf1);border-color:#f2dfe2}
+.pill.driver{background:#fff0f4;color:#c70f46}
+
+/* Phone: map is deliberately the first major content block. Actions follow it as a thumb-friendly sheet. */
+@media(max-width:820px){
+  main{padding:10px 10px 28px}
+  .hero{margin:0 2px 10px}
+  .hero p{display:none}
+  .hero h1{font-size:24px;line-height:1.08;max-width:330px}
+  .role-switch{margin-top:7px}
+
+  .map-layout{display:flex;flex-direction:column;gap:0}
+  .map-card{order:1;border-radius:18px 18px 14px 14px;box-shadow:0 7px 22px rgba(24,24,27,.08)}
+  .side-panel{order:2;margin-top:-2px;border-radius:14px 14px 18px 18px;padding:13px;box-shadow:0 8px 24px rgba(24,24,27,.06)}
+  .map-toolbar{height:48px;min-height:48px;padding:8px 11px}
+  .map-toolbar b{font-size:12px}
+  .map-toolbar span{font-size:10px}
+  .map-frame{height:48vh;min-height:330px;max-height:540px}
+
+  /* Keep the most important action immediately under the map, within easy thumb reach. */
+  .request-box{background:#fff;border-color:#dedbd5;padding:11px;margin:10px 0 0;box-shadow:0 4px 14px rgba(24,24,27,.04)}
+  .request-box textarea{background:#faf9f7;min-height:58px}
+  .full-width{min-height:46px;font-size:13px}
+  #add-marker-btn{min-height:42px}
+
+  /* Hide secondary map controls from the toolbar; core actions stay in the sheet. */
+  .map-toolbar .toolbar-actions{display:none}
+  .driver-view-controls{background:#faf9f7}
+}
+
+@media(max-width:560px){
+  .topbar{padding:8px 10px}
+  .brand-mark{width:34px;height:34px;border-radius:10px}
+  .brand b{font-size:16px}
+  .profile-btn{height:38px;padding:0 11px}
+  .main-nav{margin-top:1px}
+  .nav-btn{padding:8px 10px;background:#f7f6f3}
+  .nav-btn.active{background:#fff0f4}
+  .hero h1{font-size:23px}
+  .role-switch button{padding:10px 7px}
+  .map-frame{height:45vh;min-height:310px}
+}
+
+/* Give a few high-value surfaces the URFU gradient without turning the page into a gradient template. */
+.unread-badge{background:var(--urfu-gradient)!important}
+.status-dot{color:#22a55b}
+.toast{border-left:4px solid #ef1748}
+
+/* v18.1 visual refresh: applied URFU mobile design system to current production logic */
+
+/* v19 — Yandex Maps integration + mobile request collapse */
+.requests-toggle{
+  display:none;
+  width:100%;
+  margin:10px 0 8px;
+  padding:11px 13px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  color:var(--text);
+  font-weight:850;
+  align-items:center;
+  justify-content:space-between;
+}
+.requests-toggle-state{color:var(--muted);font-size:11px;font-weight:800}
+.requests-collapsed{display:none!important}
+@media(max-width:820px){
+  .requests-toggle{display:flex}
+  .side-panel #requests-body{transition:none}
+  .side-panel .feed-list{padding-top:9px}
+}
+@media(min-width:821px){
+  .requests-collapsed{display:block!important}
+}
+
+/* v20 Google Maps: selected map point address */
+.selected-address{margin:0 0 10px;padding:10px 12px;border:1px solid #e7e2dc;border-radius:12px;background:#f7f4f0;color:#3f3a36;font-size:14px;line-height:1.35;min-height:20px;box-sizing:border-box}.selected-address::first-line{font-weight:600}
+.urfu-map-popup{position:relative;transform:translate(-50%,-100%);pointer-events:auto;z-index:10000}.urfu-map-popup-inner{position:relative;min-width:180px;max-width:320px;padding:12px 30px 12px 12px;background:#fff;border:1px solid rgba(15,23,42,.12);border-radius:12px;box-shadow:0 8px 24px rgba(15,23,42,.2);font-size:13px;line-height:1.35}.urfu-map-popup .popup-close{position:absolute;right:7px;top:5px;border:0;background:transparent;font-size:20px;line-height:1;cursor:pointer}.urfu-map-marker{user-select:none}.urfu-map-marker:hover{transform:scale(1.06)}
+
+/* =========================================================
+   URFU4TOUR v21 — commercial mobile-first UX/UI
+   ========================================================= */
+:root{
+  --bg:#f7f8fb;--card:#fff;--text:#171a21;--muted:#737b8c;--line:#e8ebf2;
+  --primary:#6d4aff;--primary2:#b84cff;--pink:#f15aa8;--blue:#4d7cff;
+  --green:#19a66a;--danger:#e45757;--shadow:0 12px 34px rgba(25,30,45,.08);
+}
+html.dark{--bg:#0c0f15;--card:#151923;--text:#f4f6fb;--muted:#9da6b8;--line:#252b38;--shadow:0 16px 42px rgba(0,0,0,.3)}
+html.dark body{background:var(--bg);color:var(--text)}
+html.dark .topbar,html.dark .map-card,html.dark .side-panel,html.dark .card,html.dark .trip-card,html.dark .user-card,html.dark .chat-list-item,html.dark .modal-content{background:var(--card);border-color:var(--line);color:var(--text)}
+html.dark .btn-light,html.dark .icon-btn,html.dark .profile-btn,html.dark .role-switch,html.dark .request-box,html.dark .driver-view-controls{background:#1d2330;color:var(--text);border-color:var(--line)}
+html.dark input,html.dark textarea,html.dark select{background:#11151e;color:var(--text);border-color:var(--line)}
+html.dark .mobile-bottom-nav{background:rgba(21,25,35,.94);border-color:var(--line)}
+.topbar{backdrop-filter:blur(18px);background:rgba(255,255,255,.9);border-bottom:1px solid var(--line)}
+.hero{gap:18px}.hero-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.btn-ai{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;border:0;box-shadow:0 10px 24px rgba(109,74,255,.22)}
+.btn-ai:hover{filter:brightness(1.04);transform:translateY(-1px)}
+.quick-routes{display:flex;gap:8px;overflow:auto;padding:0 0 12px;scrollbar-width:none}.quick-routes::-webkit-scrollbar{display:none}.quick-routes button{flex:0 0 auto;border:1px solid var(--line);background:var(--card);color:var(--text);padding:10px 13px;border-radius:14px;font-weight:800;font-size:12px;box-shadow:0 4px 16px rgba(20,25,40,.04)}.quick-routes span{color:var(--primary);margin:0 3px}
+.request-create-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.request-create-head h3{margin:2px 0 0;font-size:16px}.soft-badge{padding:6px 9px;border-radius:99px;background:#f0edff;color:var(--primary);font-size:10px;font-weight:900}.eyebrow{font-weight:900}
+.requests-toggle{width:100%;margin:12px 0 8px;min-height:44px;border:1px solid var(--line);border-radius:13px;background:var(--card);color:var(--text);display:flex;align-items:center;justify-content:space-between;padding:0 13px;font-weight:900}.requests-toggle-state{font-size:10px;color:var(--muted)}
+.requests-collapsed{display:none!important}.mobile-bottom-nav{display:none}
+.ai-modal{max-width:560px}.ai-kicker{font-weight:950;color:var(--primary);font-size:12px;letter-spacing:.5px}.ai-query{width:100%;min-height:125px;resize:vertical;border-radius:16px!important;padding:14px!important}.ai-examples{display:flex;gap:7px;overflow:auto;margin:10px 0;scrollbar-width:none}.ai-examples::-webkit-scrollbar{display:none}.ai-examples button{white-space:nowrap;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:99px;padding:8px 11px;font-size:11px;font-weight:800}.ai-found{font-weight:950;margin:16px 0 9px}.ai-result-card{padding:14px;border:1px solid var(--line);border-radius:16px;background:var(--card);margin-top:9px}.ai-result-card.best{border-color:#cfc5ff;box-shadow:0 10px 26px rgba(109,74,255,.1)}.ai-result-top,.ai-driver{display:flex;align-items:center;justify-content:space-between;gap:10px}.ai-result-top strong{color:var(--primary);font-size:13px}.ai-driver{justify-content:flex-start;margin:11px 0}.ai-driver small{display:block;color:var(--muted);margin-top:2px}.ai-reasons{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.ai-reasons span{font-size:10px;padding:6px 8px;border-radius:9px;background:#f2fbf7;color:#14865a}html.dark .ai-reasons span{background:#123026}
+.map-card{overflow:hidden}.map-frame{border-radius:0}.ride-item,.trip-card,.user-card,.chat-list-item{border-radius:16px}.ride-actions .btn,.trip-action .btn{min-height:40px}.profile-btn{max-width:190px}.mobile-bottom-nav{position:fixed;z-index:1000;left:10px;right:10px;bottom:10px;height:66px;border:1px solid var(--line);border-radius:20px;box-shadow:0 16px 40px rgba(15,20,35,.16);display:none;grid-template-columns:repeat(4,1fr);padding:5px;background:rgba(255,255,255,.95);backdrop-filter:blur(20px)}.mobile-tab{border:0;background:transparent;color:var(--muted);border-radius:15px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:20px}.mobile-tab span{font-size:9px;font-weight:850}.mobile-tab.active{background:#f0edff;color:var(--primary)}
+@media(max-width:820px){
+  body{padding-bottom:84px}.topbar{position:sticky;top:0;z-index:900;padding:9px 10px;min-height:58px}.brand{min-width:0}.brand-mark{width:34px;height:34px}.brand small{display:none}.main-nav{display:none}.top-actions{gap:5px}.top-actions #locate-me,.top-actions .profile-btn{display:none}.icon-btn{display:grid!important;width:38px;height:38px}.hero{margin:12px 0 12px;display:block}.hero h1{font-size:30px;letter-spacing:-1.2px}.hero p{font-size:12px;margin-bottom:12px}.hero-actions{display:grid;grid-template-columns:1fr 1fr;justify-content:stretch}.hero-actions .role-switch{grid-column:1/-1}.hero-actions .btn{min-height:44px}.quick-routes{margin-bottom:2px}.map-layout{display:flex;flex-direction:column;gap:10px}.map-card{order:2}.side-panel{order:1;padding:11px}.map-frame{height:52vh;min-height:390px}.map-toolbar{height:auto;padding:11px;gap:7px;display:block}.map-toolbar .toolbar-actions{margin-top:8px}.map-toolbar .toolbar-actions .btn{flex:1;min-height:40px}.driver-view-controls{margin-top:10px}.request-box{margin:10px 0;padding:11px}.request-box .mini-actions .btn{min-height:42px}.feed-list{max-height:none}.requests-toggle{margin-top:9px}.mobile-bottom-nav{display:grid}.section-title{margin:5px 0 14px}.section-title h2{font-size:25px}.trip-grid,.users-grid,.chat-list-grid{grid-template-columns:1fr!important}.modal-content{width:calc(100vw - 20px);max-height:90vh;overflow:auto;padding:18px;border-radius:20px}.auth-modal{max-width:none}.ai-modal{max-width:none}.footer{padding-bottom:100px}.profile-btn{font-size:11px}
+}
+@media(min-width:821px){main{padding-top:22px}.map-frame{min-height:620px}.mobile-bottom-nav{display:none!important}}
+
+
+/* v21.4: hero heading removed by request; keep the action row only. */
+.hero.hero-no-heading{margin:8px 0 16px;display:flex;justify-content:flex-end;align-items:center;min-height:0}
+.hero.hero-no-heading .hero-actions{width:100%;justify-content:flex-end}
+
+/* v21.6 — profile + community */
+.community-menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:900px}
+.community-choice{display:grid;grid-template-columns:52px 1fr 20px;align-items:center;gap:12px;text-align:left;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:18px;padding:16px;box-shadow:var(--shadow);cursor:pointer}
+.community-choice:hover{transform:translateY(-1px)}
+.community-choice-icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:#f0edff;font-size:23px}
+.community-choice b,.community-choice small{display:block}.community-choice small{margin-top:4px;color:var(--muted);font-size:11px}.community-choice>span:last-child{font-size:24px;color:var(--muted)}
+.community-view{max-width:920px}.community-view-head{display:flex;align-items:center;gap:12px;margin:0 0 14px}.community-view-head h3{margin:0;font-size:22px}.community-search{width:100%;box-sizing:border-box;margin:0 0 12px;padding:13px 15px;border:1px solid var(--line);border-radius:14px;background:var(--card);color:var(--text);font-size:14px}
+.community-chat-body{height:520px;max-height:60vh;border:1px solid var(--line);border-radius:18px;background:var(--card);padding:14px;overflow:auto;margin-bottom:10px}.community-view .chat-compose{display:flex;gap:8px}.community-view .chat-compose input{flex:1}
+.top-rating-list{display:grid;gap:9px}.top-rating-item{display:grid;grid-template-columns:38px 48px 1fr auto;align-items:center;gap:12px;width:100%;padding:12px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:16px;text-align:left;cursor:pointer}.top-rating-item:hover{transform:translateY(-1px)}.top-rank{font-weight:950;text-align:center;font-size:16px}.top-rating-avatar{width:48px;height:48px;border-radius:50%;object-fit:cover}.top-rating-main b,.top-rating-main small{display:block}.top-rating-main small{margin-top:3px;color:var(--muted);font-size:11px}.top-rating-item strong{font-size:15px;white-space:nowrap}.top-1{border-color:#f0d26b}.top-2{border-color:#d9dde5}.top-3{border-color:#e5c19f}
+.profile-page-shell{max-width:900px;margin:0 auto 40px}.profile-cover{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow)}.profile-main-head{display:flex;align-items:center;gap:18px}.profile-page-avatar{width:104px;height:104px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:5px solid #fff;box-shadow:0 10px 26px rgba(25,30,45,.12)}.profile-page-name{flex:1}.profile-page-name h1{font-size:30px;margin:0 0 5px;letter-spacing:-.7px}.profile-page-name p{margin:0;color:var(--muted)}.profile-edit-circle{width:42px;height:42px;border:0;border-radius:50%;background:#f0edff;color:var(--primary);font-size:17px;cursor:pointer}.profile-stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:18px;margin-top:22px;overflow:hidden}.profile-stats div{text-align:center;padding:15px 8px;border-right:1px solid var(--line)}.profile-stats div:last-child{border-right:0}.profile-stats strong,.profile-stats span{display:block}.profile-stats strong{font-size:20px}.profile-stats span{font-size:11px;color:var(--muted);margin-top:3px}.profile-section{padding:22px 4px 8px}.profile-section h3,.profile-bio-card h3{margin:0 0 11px;font-size:17px}.profile-social-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.profile-social-grid .social-link,.social-empty{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px;border:1px solid var(--line);background:var(--card);border-radius:14px;color:var(--text);text-decoration:none;font-weight:800}.profile-social-grid .social-link svg{width:19px;height:19px;color:var(--primary)}.social-empty{color:var(--muted);font-size:12px}.profile-phone{margin-top:10px;padding:10px 12px;background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--muted)}.profile-menu-list{border:1px solid var(--line);background:var(--card);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}.profile-menu-list button{display:grid;grid-template-columns:34px 1fr 20px;align-items:center;gap:10px;width:100%;padding:15px 16px;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--text);text-align:left;cursor:pointer}.profile-menu-list button:last-child{border-bottom:0}.profile-menu-list span{font-size:19px;text-align:center;color:var(--primary)}.profile-menu-list i{font-style:normal;color:var(--muted);font-size:22px}.profile-bio-card{margin-top:14px;padding:16px;border:1px solid var(--line);background:var(--card);border-radius:16px}.profile-bio-card p{margin:0;color:var(--muted);line-height:1.55}.profile-page-actions{display:flex;gap:10px;margin-top:14px}.profile-page-actions .btn{flex:1}.profile-page-guest{max-width:600px;margin:60px auto;padding:36px;text-align:center}.profile-page-icon{font-size:42px;color:var(--primary)}.profile-page-guest h2{margin:10px 0 6px}.profile-page-guest p{color:var(--muted)}.profile-guest-actions{display:flex;gap:10px;justify-content:center;margin-top:18px}.profile-guest-actions .btn{min-width:140px}
+html.dark .community-choice-icon,html.dark .profile-edit-circle{background:#27213d}html.dark .profile-page-avatar{border-color:var(--card)}
+@media(max-width:820px){.community-menu{grid-template-columns:1fr;gap:9px}.community-choice{grid-template-columns:46px 1fr 18px;padding:13px;border-radius:16px}.community-choice-icon{width:42px;height:42px}.community-view-head h3{font-size:19px}.community-chat-body{height:55vh;min-height:340px}.top-rating-item{grid-template-columns:30px 42px 1fr auto;padding:10px}.top-rating-avatar{width:42px;height:42px}.profile-page-shell{margin:0 -2px 24px}.profile-cover{border-radius:20px;padding:18px}.profile-main-head{gap:12px}.profile-page-avatar{width:78px;height:78px;border-width:4px}.profile-page-name h1{font-size:23px}.profile-stats{margin-top:16px}.profile-stats strong{font-size:17px}.profile-social-grid{grid-template-columns:repeat(3,1fr)}.profile-social-grid .social-link,.social-empty{padding:11px 5px;font-size:10px}.profile-social-grid .social-link span{font-size:10px}.profile-page-actions{flex-direction:column}.profile-page-guest{margin:30px auto;padding:28px 18px}.profile-guest-actions{flex-direction:column}.profile-guest-actions .btn{width:100%}}
+
+/* v21.7 — Gemini map command + persistent counterpart markers */
+.ai-map-success{margin-top:12px;padding:11px 13px;border-radius:12px;background:#ecfdf5;color:#047857;font-size:12px;font-weight:800}.ai-map-error{margin-top:12px;padding:11px 13px;border-radius:12px;background:#fef2f2;color:#b91c1c;font-size:12px;font-weight:700}.ai-map-loading{margin-top:12px;color:var(--muted);font-size:12px;text-align:center}.toolbar-actions{flex-wrap:wrap}.toolbar-actions .btn{white-space:nowrap}
+@media(max-width:820px){.toolbar-actions .btn{flex:1;min-width:140px}.ai-query{min-height:110px}}
+
+/* v21.8 / beta-2.1 — понятные кнопки выбора маршрута «Откуда забрать» / «Куда приехать» */
+.route-picker{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.route-picker-btn{display:flex;align-items:center;gap:10px;padding:11px;border-radius:14px;border:2px solid var(--line);background:#fff;text-align:left;transition:.15s;min-height:62px}
+.route-picker-btn:hover{border-color:#c7d2fe}
+.route-picker-icon{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none;color:#fff}
+.route-picker-icon svg{width:18px;height:18px}
+.route-picker-start .route-picker-icon{background:#ec4899}
+.route-picker-finish .route-picker-icon{background:#f59e0b}
+.route-picker-label{display:flex;flex-direction:column;gap:2px;min-width:0}
+.route-picker-label b{font-size:12.5px;color:var(--text)}
+.route-picker-label small{color:var(--muted);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.route-picker-btn.active{border-color:var(--primary);box-shadow:0 0 0 3px #eef2ff}
+.route-picker-btn.selected{border-color:#bbf7d0}
+.route-picker-btn.selected .route-picker-label small{color:#166534;font-weight:700}
+.route-picker-extra{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
+.route-picker-extra input{flex:1;min-width:150px}
+.route-picker-extra .btn{flex:none}
+.map-accept-hint{display:flex;align-items:center;gap:8px;padding:10px 11px;border-radius:11px;background:#ecfdf5;color:#166534;font-size:12px;font-weight:700}
+html.dark .route-picker-btn{background:#1d2330;color:var(--text);border-color:var(--line)}
+html.dark .route-picker-btn.selected{border-color:#166534}
+@media(max-width:700px){.route-picker{grid-template-columns:1fr}.route-picker-btn{min-height:54px}}
+
+
+/* v21.9 — unified vector icon system + center-pin route selection */
+.ui-icon{
+  width:20px;height:20px;display:inline-block;flex:0 0 auto;
+  vertical-align:middle;stroke:currentColor;fill:none;
+}
+.ui-icon-inline{width:16px;height:16px;vertical-align:-3px}
+.ui-icon-sm{width:17px;height:17px;vertical-align:-3px}
+.icon-btn .ui-icon{width:20px;height:20px}
+.mobile-tab .ui-icon{width:21px;height:21px}
+.community-choice-icon .ui-icon{width:24px;height:24px}
+.menu-icon{width:34px;height:34px;border-radius:10px;background:#f0edff;display:grid;place-items:center;color:var(--primary)}
+.menu-icon .ui-icon{width:20px;height:20px}
+.route-picker{grid-template-columns:1fr 1fr}
+.route-picker-btn{justify-content:center;min-height:52px;font-size:14px;font-weight:900;cursor:pointer}
+.route-picker-btn .ui-icon{width:20px;height:20px}
+.route-picker-btn.selected{border-color:var(--primary);background:#f6f3ff;color:var(--primary)}
+.route-addresses{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:-2px 0 9px}
+.route-addresses span{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted);font-size:10px;padding:0 3px}
+.map-frame{position:relative}
+.map-center-pin{position:absolute;left:50%;top:50%;width:38px;height:58px;transform:translate(-50%,-100%);z-index:20;pointer-events:none;filter:drop-shadow(0 5px 7px rgba(0,0,0,.28))}
+.map-center-pin-head{position:absolute;left:5px;top:2px;width:28px;height:28px;border-radius:50% 50% 50% 0;background:#fff;border:3px solid var(--primary);transform:rotate(-45deg)}
+.map-center-pin-stem{position:absolute;left:18px;top:27px;width:3px;height:27px;border-radius:3px;background:var(--primary)}
+.map-center-pin-dot{position:absolute;left:15px;top:9px;width:8px;height:8px;border-radius:50%;background:var(--primary)}
+@media(max-width:820px){
+  .quick-routes{display:none}
+  .hero.hero-no-heading{margin:0 0 9px;display:block}
+  .hero.hero-no-heading .hero-actions{display:block}
+  .hero.hero-no-heading .hero-actions .role-switch{width:100%}
+  .hero.hero-no-heading .hero-actions #open-create-trip-home{display:none}
+  .map-layout{gap:0}
+  .map-card{order:1}
+  .side-panel{
+    order:2;display:flex;flex-direction:column;
+    padding:10px;margin-top:7px;border-radius:16px;
+  }
+  .side-panel .panel-head,.side-panel .map-legend{display:none}
+  .side-panel .request-box{order:1;margin:0;background:transparent;border:0;box-shadow:none;padding:0}
+  .side-panel .driver-view-controls{order:2}
+  .side-panel .requests-toggle{order:3}
+  .side-panel #requests-body{order:4}
+  .request-create-head,.route-addresses,.route-picker-extra,.request-box textarea,.request-box>small{display:none}
+  .route-picker{gap:8px;margin:0}
+  .route-picker-btn{min-height:48px;padding:10px 8px;border-width:1px}
+  .route-picker-btn span:last-child{font-size:14px}
+  .full-width{margin-top:8px}
+  #add-marker-btn{display:none}
+  .map-frame{height:52vh;min-height:350px;max-height:560px}
+  .map-center-pin{transform:translate(-50%,-100%) scale(.9)}
+  .mobile-bottom-nav .ui-icon{display:block}
+}
+@media(max-width:560px){
+  .map-frame{height:50vh;min-height:320px;max-height:500px}
+  .route-picker-btn{min-height:50px}
+  .map-center-pin{transform:translate(-50%,-100%) scale(.86)}
+}
+
+
+/* v21.10 — карта: постоянный индикатор центра + мобильная кнопка создания заявки */
+.map-stage{
+  position:relative;
+  overflow:hidden;
+}
+.map-stage .map-frame{
+  position:relative;
+}
+.map-center-pin{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:38px;
+  height:58px;
+  transform:translate(-50%,-100%);
+  z-index:100;
+  pointer-events:none;
+  filter:drop-shadow(0 5px 7px rgba(0,0,0,.28));
+}
+.map-center-pin-head{
+  position:absolute;
+  left:5px;
+  top:2px;
+  width:28px;
+  height:28px;
+  border-radius:50% 50% 50% 0;
+  background:#fff;
+  border:3px solid var(--primary);
+  transform:rotate(-45deg);
+}
+.map-center-pin-stem{
+  position:absolute;
+  left:18px;
+  top:27px;
+  width:3px;
+  height:27px;
+  border-radius:3px;
+  background:var(--primary);
+}
+.map-center-pin-dot{
+  position:absolute;
+  left:15px;
+  top:9px;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--primary);
+}
+.map-center-pin-label{
+  position:absolute;
+  left:50%;
+  top:61px;
+  transform:translateX(-50%);
+  white-space:nowrap;
+  padding:5px 8px;
+  border-radius:8px;
+  background:rgba(20,25,40,.82);
+  color:#fff;
+  font-size:10px;
+  line-height:1;
+  font-weight:800;
+  letter-spacing:.1px;
+}
+
+/* Кнопки в шапке всегда геометрически центрируют SVG внутри своей зоны. */
+.icon-btn{
+  display:grid;
+  place-items:center;
+  padding:0;
+  line-height:1;
+}
+.icon-btn .ui-icon{
+  margin:0;
+}
+
+/* На мобильном карта идёт сразу после переключателя роли; действия карты остаются
+   под самой картой, без дублирования кнопок в её верхней панели. */
+@media(max-width:820px){
+  .map-stage{
+    width:100%;
+  }
+  .map-toolbar .toolbar-actions{
+    display:none;
+  }
+  .map-center-pin{
+    transform:translate(-50%,-100%) scale(.9);
+  }
+  #add-marker-btn{
+    display:block;
+    width:100%;
+    min-height:48px;
+    margin-top:8px;
+  }
+}
+@media(max-width:560px){
+  .map-center-pin{
+    transform:translate(-50%,-100%) scale(.86);
+  }
+  .map-center-pin-label{
+    font-size:9px;
+  }
+}
+
+/* v23 — единый нейтральный стиль иконок профиля */
+.profile-menu-list .menu-icon{
+  background:#f1f3f5;
+  color:#394150;
+  border:1px solid #e2e5e9;
+}
+.profile-menu-list .menu-icon .ui-icon{color:inherit}
+.profile-edit-circle{
+  background:#f1f3f5!important;
+  color:#394150!important;
+  border:1px solid #dfe3e8!important;
+}
+.profile-edit-circle .ui-icon{color:inherit!important}
+.profile-page-actions .btn-light{
+  color:#394150;
+  border-color:#dfe3e8;
+  background:#f1f3f5;
+}
+html.dark .profile-menu-list .menu-icon,
+html.dark .profile-edit-circle,
+html.dark .profile-page-actions .btn-light{
+  background:#2b3038!important;
+  color:#e7eaf0!important;
+  border-color:#3b424d!important;
+}
+/* Центральная игла мини-карты при создании будущей поездки. */
+.trip-map-stage{position:relative;overflow:hidden;border-radius:15px}
+.trip-map-stage .trip-map{position:relative}
+.trip-map-center-pin{position:absolute;left:50%;top:50%;width:34px;height:45px;transform:translate(-50%,-100%);z-index:20;pointer-events:none;filter:drop-shadow(0 3px 5px rgba(0,0,0,.2))}
+.trip-map-center-pin-head{position:absolute;left:4px;top:1px;width:26px;height:26px;border-radius:50% 50% 50% 0;background:#fff;border:3px solid var(--primary);transform:rotate(-45deg)}
+.trip-map-center-pin-stem{position:absolute;left:16px;top:25px;width:3px;height:18px;border-radius:3px;background:var(--primary)}
+.trip-map-center-pin-dot{position:absolute;left:13px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--primary)}
+html.dark .trip-map-center-pin-head{background:#151923}
+
+/* Центральная игла: короче, без остаточного тёмного блока под ней. */
+.map-center-pin{width:34px;height:45px;transform:translate(-50%,-100%);filter:drop-shadow(0 3px 5px rgba(0,0,0,.2))}
+.map-center-pin-head{left:4px;top:1px;width:26px;height:26px;border-width:3px}
+.map-center-pin-stem{left:16px;top:25px;width:3px;height:18px}
+.map-center-pin-dot{left:13px;top:8px;width:8px;height:8px}
+.map-center-pin-label{display:none!important}
+@media(max-width:820px){.map-center-pin{transform:translate(-50%,-100%) scale(.9)}}
+@media(max-width:560px){.map-center-pin{transform:translate(-50%,-100%) scale(.86)}}
+.brand-home{border:0;background:transparent;font:inherit;color:inherit;cursor:pointer;padding:0;text-align:left}
+
+.profile-social-grid .social-link svg{color:#394150!important}
+html.dark .profile-social-grid .social-link svg{color:#e7eaf0!important}
+
+.profile-page-icon{color:#394150!important}.profile-page-icon .ui-icon{color:inherit!important}
+html.dark .profile-page-icon{color:#e7eaf0!important}
+
+/* BETA-2.4 — compact map marker reset controls. Desktop uses the supplied raster icon; mobile uses a matching SVG. */
+.clear-markers-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-width:164px}
+.clear-markers-btn img{width:22px;height:22px;display:block;object-fit:contain}
+.mobile-map-clear{display:none;position:absolute;top:10px;right:10px;width:42px;height:42px;padding:0;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.96);box-shadow:0 4px 14px rgba(15,23,42,.12);place-items:center;z-index:110;line-height:0}
+.mobile-map-clear img{width:24px;height:24px;display:block}
+@media(max-width:820px){
+  .mobile-map-clear{display:grid}
+  .map-toolbar{position:relative;padding-right:58px}
+  .toolbar-actions{display:none!important}
+}
+@media(min-width:821px){
+  .mobile-map-clear{display:none!important}
+}
+
+/* BETA-2.7 — метка посадки: машущая рука человечка */
+.urfu-html-marker{line-height:0}
+.urfu-html-marker>svg{display:block;width:100%;height:100%}
+.pk-arm{transform-box:view-box;transform-origin:26.5px 20px;animation:pk-wave .62s ease-in-out infinite alternate}
+@keyframes pk-wave{from{transform:rotate(-18deg)}to{transform:rotate(12deg)}}
+@media (prefers-reduced-motion:reduce){.pk-arm{animation:none;transform:rotate(4deg)}}
+
+/* BETA-2.7 — подтверждение подбора */
+.pickup-wait{display:flex;flex-direction:column;gap:6px;padding:10px 12px;border-radius:12px;background:rgba(220,38,38,.08);border:1px solid rgba(220,38,38,.25);font-size:13px}
+.pickup-wait b{font-size:13px}
+.pickup-wait .pickup-wait-actions{display:flex;gap:8px;flex-wrap:wrap}
+.pickup-confirm-body{display:flex;flex-direction:column;gap:14px;padding:4px 2px}
+.pickup-confirm-body .pickup-confirm-route{font-size:14px;line-height:1.45}
+.pickup-confirm-body .pickup-confirm-actions{display:flex;gap:10px;flex-wrap:wrap}
+.passengers-tabs{display:flex;gap:8px;margin:10px 0 14px}
+
+/* BETA-2.7.1 — ошибки на мобильном: верхний правый угол, поверх всего */
+@media(max-width:700px){
+  .toast{
+    top:calc(10px + env(safe-area-inset-top,0px));
+    right:calc(10px + env(safe-area-inset-right,0px));
+    bottom:auto;left:auto;
+    max-width:min(340px,calc(100vw - 20px));
+    z-index:400;
+    box-shadow:0 12px 30px rgba(15,23,42,.28)
+  }
+}
+
+/* BETA-2.7.1 — назначенный водитель */
+.legend-dot.mydriver{background:#7c3aed}
+.map-focus-driver{
+  position:absolute;top:10px;left:10px;z-index:110;
+  display:none;align-items:center;gap:7px;
+  padding:9px 12px;border:1px solid var(--line);border-radius:11px;
+  background:rgba(255,255,255,.96);color:#5b21b6;font-weight:800;font-size:13px;
+  box-shadow:0 4px 14px rgba(15,23,42,.12)
+}
+.map-focus-driver:not(.hidden){display:inline-flex}
+.map-focus-driver .ui-icon{width:18px;height:18px}
+@media(max-width:700px){.map-focus-driver{top:10px;left:10px;padding:9px 11px}}
+
+/* BETA-2.7.2 — тост перекрывался липкой шапкой (.topbar z-index:900)
+   и нижней навигацией (.mobile-bottom-nav z-index:1000). Поднимаем выше всего,
+   включая балуны карты (.urfu-map-popup z-index:10000). */
+.toast{z-index:12000;pointer-events:none}
+@media(max-width:700px){
+  .toast{
+    position:fixed;
+    top:calc(10px + env(safe-area-inset-top,0px));
+    right:calc(10px + env(safe-area-inset-right,0px));
+    bottom:auto;left:auto;
+    max-width:min(340px,calc(100vw - 20px));
+    z-index:12000
+  }
+}
+
+/* BETA-2.7.2 — переход к маршруту по клику на заявку */
+.ride-clickable{cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.ride-clickable:hover{border-color:#c7d2fe;box-shadow:0 6px 18px rgba(79,70,229,.08)}
+.ride-clickable:focus-within{border-color:#a5b4fc}
+
+
+/* BETA-2.7.3 — аватар над меткой участника */
+.urfu-marker-stack{display:flex;flex-direction:column;align-items:center;gap:10px;line-height:0}
+.urfu-marker-avatar{
+  display:block;flex:0 0 auto;box-sizing:border-box;
+  border-radius:50%;overflow:hidden;background:#fff;
+  border:2px solid #fff;box-shadow:0 3px 10px rgba(15,23,42,.3)
+}
+.urfu-marker-avatar img,.urfu-marker-avatar svg{
+  display:block;width:100%;height:100%;object-fit:cover;border-radius:50%
+}
+.urfu-marker-art{display:block;flex:0 0 auto}
+.urfu-marker-art svg{display:block;width:100%;height:100%}
+
+/* BETA-2.7.3 — базовый серый аватар вместо буквенной заглушки */
+.avatar-default{display:inline-block;flex:none;overflow:hidden;border-radius:50%;line-height:0;background:#a8a8a8}
+.avatar-default svg{display:block;width:100%;height:100%}
+
+/* BETA-2.7.4 — сворачивание верхней и нижней панелей на телефоне */
+.chrome-toggle{
+  display:none;position:absolute;z-index:5;
+  width:34px;height:22px;padding:0;place-items:center;
+  border:1px solid var(--line);border-radius:8px;
+  background:rgba(255,255,255,.97);color:#5b6478;
+  box-shadow:0 3px 10px rgba(15,23,42,.16);
+  transition:transform .18s ease
+}
+.chrome-toggle svg{display:block}
+.chrome-toggle-top{right:10px;bottom:-11px}
+.chrome-toggle-bottom{right:10px;top:-13px;transform:rotate(180deg)}
+
+@media(max-width:700px){
+  .chrome-toggle{display:grid}
+
+  /* панели стали ниже: 68 -> 54 и 66 -> 56 */
+  .topbar{min-height:54px;padding:6px 10px}
+  .mobile-bottom-nav{height:56px;padding:4px;bottom:8px}
+  .mobile-bottom-nav .mobile-tab{gap:2px;font-size:17px}
+
+  /* контент упирался в нижнюю панель: 28px отступа против 76px панели */
+  main{padding-bottom:calc(92px + env(safe-area-inset-bottom,0px))}
+  body.chrome-bottom-hidden main{padding-bottom:calc(46px + env(safe-area-inset-bottom,0px))}
+
+  body.chrome-top-hidden .topbar{min-height:0;height:14px;padding:0}
+  body.chrome-top-hidden .topbar>*:not(.chrome-toggle){display:none}
+  body.chrome-top-hidden .chrome-toggle-top{transform:rotate(180deg)}
+
+  body.chrome-bottom-hidden .mobile-bottom-nav{height:16px;padding:0}
+  body.chrome-bottom-hidden .mobile-bottom-nav .mobile-tab{display:none}
+  body.chrome-bottom-hidden .chrome-toggle-bottom{transform:rotate(0)}
+
+  /* длинные формы (создание будущей поездки) не прокручивались:
+     .modal центрировал контент без overflow, низ уезжал под панель */
+  .modal{
+    place-items:start center;
+    overflow-y:auto;-webkit-overflow-scrolling:touch;
+    padding:12px 12px calc(88px + env(safe-area-inset-bottom,0px))
+  }
+  body.chrome-bottom-hidden .modal{padding-bottom:calc(42px + env(safe-area-inset-bottom,0px))}
+  .modal-content{max-height:none;margin:0 auto}
+}
+
+/* BETA-2.7.4 — какая именно поездка оценивается */
+.rating-ride-label{margin:2px 0 10px;color:var(--muted);font-size:12px;font-weight:700}
+
+/* BETA-2.7.5 — редактирование и удаление отзыва */
+.rating-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+
+
+/* BETA 2.8 — форма будущей поездки и регулярные маршруты */
+.trip-map-stage{position:relative}.trip-selection-hint{margin-top:8px;padding:8px 10px;border-radius:10px;background:#f1f3f8;color:var(--muted);font-size:11px;line-height:1.35}.trip-map-picked{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.trip-map-picked span{padding:8px 10px;border-radius:10px;background:#fff;border:1px solid var(--line);font-size:11px;font-weight:800;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.regular-trip-box{margin-top:15px;padding:14px;background:#f8f9fd;border:1px solid var(--line);border-radius:15px}.regular-trip-head{display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin-bottom:11px}.regular-trip-head b{font-size:13px}.regular-trip-head span{font-size:10px;color:var(--muted)}.regular-weeks-label{display:block;margin-top:13px;font-size:12px;font-weight:900}.regular-weeks-label select{margin-top:7px}.trip-folder{margin-bottom:14px;padding:0;border:1px solid var(--line);border-radius:18px;background:var(--card);box-shadow:var(--shadow);overflow:hidden}.trip-folder-head{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 16px;background:#f8f9fd;border-bottom:1px solid var(--line)}.trip-folder-head h3{margin:2px 0 3px;font-size:16px}.trip-folder-head h3 span{color:var(--primary)}.trip-folder-head small{color:var(--muted);font-size:11px}.trip-folder-body{padding:10px}.trip-week+.trip-week{margin-top:12px}.trip-week-title{font-size:11px;font-weight:900;color:var(--muted);padding:3px 5px 7px;text-transform:uppercase;letter-spacing:.3px}.trip-folder .trip-card{box-shadow:none;border-radius:13px;border:1px solid var(--line);margin:0}.trip-folder .trip-card+.trip-card{margin-top:8px}.trip-folder .trip-action{flex-wrap:wrap}.trip-map-picker{background:#f8f9fd}.trip-map-picker .btn{font-weight:900}.trip-map-picker .btn-primary{background:linear-gradient(135deg,#f97316,#e11d48)}html.dark .trip-selection-hint,html.dark .regular-trip-box,html.dark .trip-folder-head{background:#1b202b}html.dark .trip-map-picked span,html.dark .weekday-btn{background:#1d2330}html.dark .weekday-btn.selected{color:#fff}
+@media(max-width:700px){.trip-map-picked{grid-template-columns:1fr}.regular-trip-head{align-items:flex-start;flex-direction:column;gap:3px}.weekday-picker{gap:6px}.weekday-btn{flex:1;min-width:38px}.trip-folder-head{align-items:flex-start}.trip-folder-head .btn{flex:none}}
+
+/* BETA 2.9 — GigaChat ride finder */
+.section-title-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.ride-finder-widget{position:fixed;right:24px;bottom:24px;width:min(430px,calc(100vw - 32px));max-height:min(1000px,calc(100vh - 40px));background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 24px 70px rgba(16,24,40,.22);z-index:180;overflow:hidden}.ride-finder-widget.hidden{display:none}.ride-finder-head{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:linear-gradient(135deg,#f0006c,#ff9f00);color:#fff}.ride-finder-head b,.ride-finder-head small{display:block}.ride-finder-head small{opacity:.9;margin-top:2px}.ride-finder-question{display:none;width:30px;height:30px}.ride-finder-icon{width:32px;height:32px;border:0;border-radius:10px;background:rgba(255,255,255,.2);color:#fff;font-size:20px;font-weight:900;cursor:pointer}.ride-finder-body{display:flex;flex-direction:column;max-height:min(1000px,calc(100vh - 96px))}.ride-finder-messages{padding:12px;flex:1;min-height:420px;max-height:calc(100vh - 220px);overflow:auto;background:#f8f9fc}.ride-finder-msg{display:flex;margin:5px 0}.ride-finder-msg span{max-width:88%;padding:9px 11px;border-radius:13px;background:#fff;border:1px solid var(--line);font-size:13px;line-height:1.35}.ride-finder-msg.mine{justify-content:flex-end}.ride-finder-msg.mine span{background:#fff0f5;border-color:#ffd1e1}.ride-finder-driver-main small,.ride-finder-route small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.ride-finder-route{font-size:12px;margin:9px 0}.ride-finder-actions{display:flex;gap:7px;flex-wrap:wrap}.ride-finder-compose{display:flex;gap:8px;padding:10px;border-top:1px solid var(--line);background:#fff}.ride-finder-compose textarea{flex:1;resize:none;border:1px solid var(--line);border-radius:12px;padding:10px;font:inherit;outline:none}.ride-finder-compose textarea:focus{border-color:#f0006c;box-shadow:0 0 0 3px #fff0f5}.ride-finder-compose .btn{align-self:stretch}.ride-finder-widget.collapsed{width:58px;height:58px;border-radius:50%;right:22px;bottom:22px;overflow:visible}.ride-finder-widget.collapsed .ride-finder-head{width:58px;height:58px;border-radius:50%;padding:0;display:grid;place-items:center;background:#fff;border:1px solid #111;box-shadow:0 10px 28px rgba(0,0,0,.18)}.ride-finder-widget.collapsed .ride-finder-head>div{display:none}.ride-finder-widget.collapsed .ride-finder-icon{position:absolute;inset:0;width:58px;height:58px;border-radius:50%;background:transparent;color:#000;font-size:0;display:flex;align-items:center;justify-content:center;cursor:grab}.ride-finder-widget.collapsed .ride-finder-icon:active{cursor:grabbing}.ride-finder-widget.collapsed .ride-finder-minus{display:none}.ride-finder-widget.collapsed .ride-finder-question{display:block;width:30px;height:30px;color:#000}.ride-finder-widget.collapsed .ride-finder-head{position:relative;cursor:grab}.ride-finder-widget.collapsed .ride-finder-head:active{cursor:grabbing}.ride-finder-widget.collapsed .ride-finder-body{display:none}
+@media(max-width:700px){.section-title-actions{width:100%}.section-title-actions .btn{flex:1}.ride-finder-widget{right:12px;bottom:76px;width:calc(100vw - 24px)}.ride-finder-widget.collapsed{right:16px;bottom:76px}}
+
+/* BETA-2.9.1 — заголовок списка чёрный, сворачивание списка стрелкой */
+
+
+
+
+
+
+/* BETA-2.9.1 — карточка топ-водителя в ленте чата */
+.ride-finder-chat-pick{border:1px solid var(--line);border-radius:14px;padding:10px;margin:2px 0 6px;background:#fff}
+.ride-finder-chat-pick-main{display:flex;gap:9px;align-items:center;margin-bottom:9px}
+.ride-finder-chat-pick-main small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+
+/* BETA 2.9.3 — GigaChat: стабильное восстановление из правого нижнего угла и кнопка локации */
+.ride-finder-widget{transform-origin:right bottom}
+.ride-finder-widget.collapsed .ride-finder-question{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;display:block;width:24px;height:24px}
+.ride-finder-widget.collapsed .ride-finder-icon{position:absolute;inset:0;margin:0}
+.booking-location-btn{display:block;margin-top:7px}
+@media(max-width:700px){.ride-finder-widget:not(.collapsed){right:12px;bottom:calc(15% + 76px)}.ride-finder-widget.collapsed{right:16px;bottom:calc(15% + 76px)}.ride-finder-widget.collapsed .ride-finder-question{width:24px;height:24px}}
+
+/* BETA 2.9.3 — при разворачивании чат всегда возвращается к правому нижнему краю */
+.ride-finder-widget:not(.collapsed){right:24px;bottom:24px;left:auto;top:auto}
+@media(max-width:700px){.ride-finder-widget:not(.collapsed){right:12px;left:12px;bottom:calc(15% + 76px);top:auto}}
+
+/* BETA 2.10 — navigation, unread indicator, profile editor and help */
+.avatar-file-input{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+.avatar-file-picker{display:inline-flex!important;align-items:center;justify-content:center;gap:7px;min-height:42px;padding:0 15px;border:1px solid transparent!important;border-radius:12px!important;background:var(--urfu-gradient)!important;color:#fff!important;font-size:12px!important;font-weight:900!important;cursor:pointer;box-shadow:0 7px 16px rgba(230,25,90,.16);margin:0!important}
+.avatar-file-picker:hover{transform:translateY(-1px);box-shadow:0 9px 20px rgba(230,25,90,.22)}
+.avatar-file-picker .ui-icon{color:#fff!important}
+.community-choice-arrow{display:flex!important;align-items:center;justify-content:flex-end;gap:7px}.community-unread-badge{margin:0!important;min-width:20px!important;height:20px!important;padding:0 6px!important;background:var(--urfu-gradient)!important;box-shadow:0 4px 10px rgba(230,25,90,.2)}
+.help-modal-content{width:min(860px,100%)}.help-hero{display:flex;align-items:center;gap:14px;padding-bottom:8px}.help-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:16px;background:var(--urfu-gradient);color:#fff;font-size:27px;font-weight:950;box-shadow:0 10px 22px rgba(230,25,90,.18)}.help-body{font-size:13px;line-height:1.65;color:#475166}.help-body h3{font-size:15px;color:var(--text);margin:20px 0 6px}.help-body p{margin:0 0 8px}.help-body h3:first-child{margin-top:8px}
+@media(max-width:820px){.help-modal-content{width:100%}.help-hero{align-items:flex-start}.help-icon{width:44px;height:44px;font-size:23px}.main-nav{display:none}}
+
+/* BETA 2.11 — интерфейс GigaChat: размещение под кнопками на ПК и компактный мобильный вид */
+@media(min-width:701px){
+  .ride-finder-widget:not(.collapsed){
+    top:260px;
+    bottom:24px;
+    max-height:calc(100vh - 284px);
+  }
+  .ride-finder-widget:not(.collapsed) .ride-finder-body{
+    max-height:calc(100vh - 340px);
+  }
+  .ride-finder-widget:not(.collapsed) .ride-finder-messages{
+    min-height:0;
+    max-height:calc(100vh - 460px);
+  }
+}
+@media(max-width:700px){
+  /* BETA 2.11.1 — верх чата сохраняем на прежнем месте, нижний край опускаем вниз.
+     Чат становится выше за счёт увеличения доступной высоты на 15vh. */
+  .ride-finder-widget:not(.collapsed){
+    right:24px;
+    left:24px;
+    bottom:76px;
+    width:auto;
+    max-height:67vh;
+    border-radius:16px;
+  }
+  .ride-finder-widget:not(.collapsed) .ride-finder-body{
+    max-height:calc(67vh - 58px);
+  }
+  .ride-finder-widget:not(.collapsed) .ride-finder-messages{
+    min-height:0;
+    max-height:49vh;
+    padding:9px;
+  }
+  .ride-finder-widget:not(.collapsed) .ride-finder-compose{
+    padding:8px;
+  }
+  .ride-finder-widget:not(.collapsed) .ride-finder-compose textarea{
+    min-height:38px;
+    max-height:70px;
+  }
+}
+
+/* BETA 2.12 — глубокая тёмная тема без фиолетовых оттенков */
+.topbar #user-info-badge{display:inline-flex;align-items:center;gap:8px;min-width:0}
+.topbar-avatar{width:27px!important;height:27px!important;border-radius:50%!important;object-fit:cover;display:inline-grid;place-items:center;flex:0 0 27px;overflow:hidden}
+.topbar-avatar.avatar-default{background:#70757d}
+.topbar-avatar.avatar-default svg{width:27px;height:27px;display:block}
+
+html.dark{
+  --bg:#0b0d10;
+  --card:#15181d;
+  --text:#eceff2;
+  --muted:#9299a3;
+  --line:#292e35;
+  --primary:#c9364b;
+  --primary2:#df671f;
+  --pink:#b83254;
+  --blue:#64707e;
+  --green:#2f9a68;
+  --danger:#bd3943;
+  --shadow:0 18px 48px rgba(0,0,0,.42);
+  --urfu-gradient:linear-gradient(135deg,#9f2340 0%,#c43b42 52%,#d75a19 100%);
+}
+html.dark body{background:var(--bg);color:var(--text)}
+html.dark .topbar{background:rgba(17,19,23,.96);border-color:#292e35}
+html.dark .brand b span{color:#d4494d}
+html.dark .nav-btn{color:#9299a3}
+html.dark .nav-btn:hover,html.dark .nav-btn.active{background:#24282e;color:#df4a4d}
+html.dark .icon-btn,html.dark .profile-btn{background:#1b1f24;border-color:#30353c;color:#e7e9ec}
+html.dark .icon-btn:hover,html.dark .profile-btn:hover{background:#24282e}
+html.dark .role-switch{background:#24282a;border-color:#34393f}
+html.dark .role-switch button{color:#a1a7ae}
+html.dark .role-switch button.active{background:#35393d;color:#f0f2f4;box-shadow:0 4px 12px rgba(0,0,0,.28)}
+html.dark .btn-primary,html.dark .btn-ai{background:var(--urfu-gradient);box-shadow:0 8px 20px rgba(0,0,0,.28)}
+html.dark .btn-light{background:#24282d;color:#e4e7eb;border-color:#343a42}
+html.dark .btn-danger{background:#3a2024;color:#d95a61}
+html.dark .eyebrow,html.dark .trip-date,html.dark .ai-kicker{color:#d24a4f}
+html.dark .soft-badge{background:#302326;color:#d65a5d}
+html.dark .community-choice-icon,html.dark .profile-edit-circle{background:#25292e;color:#d7dade}
+html.dark .profile-social-grid .social-link svg,html.dark .profile-menu-list span,html.dark .profile-page-icon{color:#d7dade!important}
+html.dark .community-choice{background:var(--card);border-color:var(--line)}
+html.dark .community-choice-arrow,.dark .community-choice>span:last-child{color:#8f969f}
+html.dark .trip-folder-head,html.dark .trip-selection-hint,html.dark .regular-trip-box{background:#1a1e23}
+html.dark .trip-map-picked span,html.dark .weekday-btn{background:#22272d;color:var(--text);border-color:#333941}
+html.dark .weekday-btn.selected{background:var(--urfu-gradient);color:#fff;border-color:transparent}
+html.dark .ai-result-card.best{border-color:#71343b;box-shadow:0 10px 26px rgba(0,0,0,.28)}
+html.dark .ai-result-top strong,html.dark .ai-result-card .ai-driver strong{color:#d6d9dd}
+html.dark .request-box,html.dark .driver-view-controls{background:#1a1e23;border-color:#2c3239}
+html.dark .request-box textarea{background:#111418;color:var(--text);border-color:#30363e}
+html.dark .ride-item,html.dark .trip-card,html.dark .user-card,html.dark .chat-list-item{background:var(--card);border-color:var(--line)}
+html.dark .pill.driver{background:#2b2d2f;color:#d9dde0}
+html.dark .pill.accepted{background:#382124;color:#d95c62}
+html.dark .pill.pending{background:#352b21;color:#d99a54}
+html.dark .pill.on_the_way{background:#202c35;color:#9bb5c8}
+html.dark .error{background:#351d20;color:#d95b62}
+html.dark .modal{background:rgba(0,0,0,.68)}
+html.dark .modal-content{background:#171a1f;color:var(--text);border-color:#2c3138}
+html.dark .modal-icon{background:#282c30;color:#d7dade}
+html.dark .modal-close{background:#252a2f;color:#d5d8dc}
+html.dark input,html.dark textarea,html.dark select{background:#111419;color:var(--text);border-color:#30363e}
+html.dark input:focus,html.dark textarea:focus{border-color:#9e4a4e;box-shadow:0 0 0 4px rgba(180,55,65,.14)}
+html.dark .top-rating-item{background:var(--card);border-color:var(--line)}
+html.dark .top-rating-item strong{color:#e7e9ec}
+html.dark .profile-cover,html.dark .profile-menu-list,html.dark .profile-phone,html.dark .profile-bio-card{background:var(--card);border-color:var(--line)}
+html.dark .profile-page-avatar{border-color:#252a30}
+html.dark .profile-form{background:#15181d}
+html.dark .mobile-bottom-nav{background:rgba(19,22,27,.96);border-color:#2b3037}
+html.dark .mobile-tab.active{background:#292d31;color:#d74c50}
+html.dark .unread-badge{background:var(--urfu-gradient)!important}
+html.dark .avatar-file-picker{background:var(--urfu-gradient)!important;box-shadow:0 7px 16px rgba(0,0,0,.3)}
+html.dark .toast,.dark .cookie-banner{background:#080a0d}
+
+/* Яндекс Карты: затемнение именно картографического слоя, интерфейс сайта не инвертируется. */
+html.dark .map-frame .ymaps-2-1-79-ground-pane,
+html.dark .trip-map .ymaps-2-1-79-ground-pane,
+html.dark [class*="-ground-pane"]{
+  filter:brightness(.62) saturate(.72) contrast(.98) invert(.84) hue-rotate(180deg);
+}
+html.dark .map-frame [class*="-copyright"],html.dark .trip-map [class*="-copyright"]{color:#aeb4bc!important}
+html.dark .map-frame [class*="-control"],html.dark .trip-map [class*="-control"]{filter:brightness(.72)}
+
+/* BETA 2.12.1 — полноценная тёмная тема для карты и GigaChat */
+html.dark .map-card .map-toolbar{
+  background:#15181d;
+  color:var(--text);
+  border-color:var(--line);
+}
+html.dark .map-card .map-toolbar b{color:var(--text)}
+html.dark .map-card .map-toolbar span{color:var(--muted)}
+html.dark .map-card .toolbar-actions .btn,
+html.dark .map-card .mobile-map-clear{
+  background:#20252b;
+  color:#dfe3e7;
+  border-color:#30363d;
+}
+html.dark .map-card .toolbar-actions .btn:hover,
+html.dark .map-card .mobile-map-clear:hover{background:#292e34}
+
+/* Затемняем только карту Yandex, а не маркеры и центральную иглу. */
+html.dark .map-frame .ymaps-2-1-79-ground-pane,
+html.dark .trip-map .ymaps-2-1-79-ground-pane{
+  filter:brightness(.42) saturate(.58) contrast(1.08) invert(.86) hue-rotate(180deg);
+}
+html.dark .map-frame [class*="-copyright"],
+html.dark .trip-map [class*="-copyright"]{
+  background:rgba(12,15,18,.86)!important;
+  color:#9ea5ad!important;
+  text-shadow:none!important;
+}
+html.dark .map-frame [class*="-control"],
+html.dark .trip-map [class*="-control"]{
+  filter:brightness(.55) contrast(1.08);
+}
+html.dark .map-frame [class*="-zoom-control"] [class*="-zoom-control"]{
+  background:#1a1e23!important;
+}
+
+/* GigaChat: ни одного белого участка в тёмной теме. */
+html.dark .ride-finder-widget{
+  background:#15181d;
+  border-color:#30353c;
+  box-shadow:0 24px 70px rgba(0,0,0,.52);
+}
+html.dark .ride-finder-head{
+  background:linear-gradient(135deg,#8e203a,#b53b31,#c85a17);
+}
+html.dark .ride-finder-messages{
+  background:#101318;
+  border-color:#292e35;
+}
+html.dark .ride-finder-msg span{
+  background:#1b2026;
+  color:#e6e9ed;
+  border-color:#30363c;
+}
+html.dark .ride-finder-msg.mine span{
+  background:#302025;
+  color:#e9e1e3;
+  border-color:#54313a;
+}
+html.dark .ride-finder-compose{
+  background:#15181d;
+  border-color:#292e35;
+}
+html.dark .ride-finder-compose textarea{
+  background:#0d1014;
+  color:#eceff2;
+  border-color:#343a42;
+}
+html.dark .ride-finder-compose textarea::placeholder{color:#707984}
+html.dark .ride-finder-compose textarea:focus{
+  border-color:#9e3d49;
+  box-shadow:0 0 0 3px rgba(180,55,65,.14);
+}
+html.dark .ride-finder-chat-pick{
+  background:#1a1e23;
+  border-color:#30363c;
+  color:var(--text);
+}
+html.dark .ride-finder-widget.collapsed .ride-finder-head{
+  background:#15181d;
+  border-color:#080a0d;
+}
+
+
+/* BETA 2.12.2 — полноценная адаптация оставшихся белых элементов тёмной темы */
+html.dark .seats-left{
+  background:#252b38;
+  color:#ffb0bd;
+  border:1px solid #3a414f;
+}
+html.dark .seats-one{
+  background:#33251d;
+  color:#ffb56b;
+}
+html.dark .seats-none{
+  background:#351d24;
+  color:#ff8b9b;
+}
+
+/* Личные чаты и сообщения */
+html.dark .chat-person-head,
+html.dark .chat-person-head h2,
+html.dark .chat-person-head p{color:var(--text)}
+html.dark .global-chat-body,
+html.dark .community-chat-body{
+  background:#11151e;
+  border-color:#2b313d;
+}
+html.dark .gmsg{
+  background:#1a1f28;
+  border-color:#303744;
+  color:var(--text);
+}
+html.dark .gmsg.mine{
+  background:#20252d;
+  color:var(--text);
+}
+html.dark .gmsg p,
+html.dark .gmsg span{color:var(--text)}
+html.dark .gmsg b{color:#ff8c9d}
+html.dark .gmsg time{color:#8d97aa}
+html.dark .chat-compose input,
+html.dark .community-view .chat-compose input{
+  background:#11151e;
+  color:var(--text);
+  border:1px solid #343b48;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.025);
+}
+html.dark .chat-compose input::placeholder,
+html.dark .community-view .chat-compose input::placeholder{color:#788294}
+html.dark .chat-compose .btn,
+html.dark .community-view .chat-compose .btn{
+  background:linear-gradient(135deg,#9f253e,#c84a1e);
+  color:#fff;
+  border-color:transparent;
+}
+
+/* Профили, отзывы и карточки пользователей */
+html.dark .profile-block,
+html.dark .contacts,
+html.dark .passenger-card,
+html.dark .account-card,
+html.dark .review-item,
+html.dark .account-review{
+  background:#1a1f28;
+  color:var(--text);
+  border-color:#303744;
+}
+html.dark .profile-block p,
+html.dark .account-card>p,
+html.dark .account-review p,
+html.dark .review-item p{color:#b4bdcc}
+html.dark .account-card{
+  background:linear-gradient(180deg,#1a1f28 0%,#151a22 100%);
+}
+html.dark .passengers-summary span{
+  background:#1b2029;
+  border-color:#303744;
+  color:#aeb7c6;
+}
+html.dark .top-rating-item{
+  background:#1a1f28;
+  color:var(--text);
+  border-color:#303744;
+}
+html.dark .top-rating-item strong,
+html.dark .top-rating-main b{color:var(--text)}
+html.dark .top-rating-main small{color:#9da6b8}
+html.dark .account-reviews-empty{color:var(--text)}
+html.dark .profile-form input,
+html.dark .profile-form textarea{
+  background:#11151e;
+  color:var(--text);
+  border-color:#343b48;
+}
+
+/* Сообщество: белые карточки пользователей */
+html.dark .community-choice,
+html.dark .community-search,
+html.dark .user-card{
+  background:#1a1f28;
+  color:var(--text);
+  border-color:#303744;
+}
+html.dark .community-choice-icon,
+html.dark .profile-edit-circle{
+  background:#252a33;
+  color:#ff7f91;
+}
+
+/* Помощь: читаемый текст в тёмной теме */
+html.dark .help-body{
+  color:#c3cad6;
+}
+html.dark .help-body h3{
+  color:#fff;
+}
+html.dark .help-body p,
+html.dark .help-body li,
+html.dark .help-body strong{
+  color:#c3cad6;
+}
+html.dark .help-body a{color:#ff8798}
+html.dark .help-modal-content{
+  background:#151923;
+  border-color:#303744;
+}
+
+
+/* BETA 2.12.3 — иконка «Удалить все метки» в тёмной теме
+   Используется единый векторный SVG на ПК и мобильных устройствах. */
+html.dark .clear-markers-btn img,
+html.dark .mobile-map-clear img{
+  filter: brightness(0) invert(1);
+}
+
+/* BETA 2.12.4 — тёмная тема элементов управления Yandex Maps.
+   Не используем invert() для картографического слоя: он создавал серое полотно.
+   Штатные нижние ссылки/кнопки карты затемняются отдельно. */
+html.dark .map-frame .ymaps-2-1-79-ground-pane,
+html.dark .trip-map .ymaps-2-1-79-ground-pane,
+html.dark [class*="ymaps-2-1-79"][class*="ground-pane"]{
+  filter:brightness(.52) saturate(.78) contrast(1.08)!important;
+}
+
+/* Нижняя панель Yandex Maps: «Как добраться», «Доехать на такси», «Создать свою карту». */
+html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyright"],
+html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyrights"],
+html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyrights-pane"]{
+  background:rgba(18,21,25,.96)!important;
+  color:#dfe3e7!important;
+}
+html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyright"] a,
+html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyrights"] a,
+html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyrights-pane"] a{
+  background:#1d2228!important;
+  color:#f0f2f4!important;
+  border-color:#343b43!important;
+  text-shadow:none!important;
+  box-shadow:none!important;
+}
+html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyright"] a:hover,
+html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyrights"] a:hover,
+html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyrights-pane"] a:hover{
+  background:#282e35!important;
+  color:#fff!important;
+}
+html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyright"] span,
+html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyrights"] span,
+html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyrights-pane"] span{
+  color:#bfc5cc!important;
+}
+
+/* На мобильной карте используются те же штатные элементы Yandex. */
+@media(max-width:700px){
+  html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyright"],
+  html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyrights"],
+  html.dark .map-frame [class*="ymaps-2-1-79"][class*="copyrights-pane"]{
+    background:rgba(18,21,25,.96)!important;
+  }
+}
